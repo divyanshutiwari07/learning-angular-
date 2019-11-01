@@ -6,6 +6,7 @@ import { GoogleMapComponent } from './google-map/google-map.component';
 import { BarChartComponent } from './chart/bar-chart/bar-chart.component'
 import { MultipleChartsComponent } from './chart/multiple-charts/multiple-charts.component';
 import { ShowChartsComponent } from './chart/show-charts/show-charts.component';
+import { PreviewImageComponent } from './preview-image/preview-image.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'bar-chart' ,component:BarChartComponent },
   { path: 'multiple-charts' ,component:MultipleChartsComponent },
   { path: 'show-charts' ,component:ShowChartsComponent },
-
+  { path: 'preview-image' ,component:PreviewImageComponent },
+  
 ];
 
 @NgModule({
@@ -28,6 +30,6 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [ChartComponent, GoogleMapComponent,BarChartComponent,
-  MultipleChartsComponent, ShowChartsComponent ]
+  MultipleChartsComponent, ShowChartsComponent, PreviewImageComponent ]
 
   

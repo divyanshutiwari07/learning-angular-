@@ -22,6 +22,8 @@ export class GoogleMapComponent implements OnInit {
   moveToChartPage(){
     this.router.navigateByUrl('/chart');
   }
-  
+  moveToPreviewImage(){
+    this.router.navigateByUrl('/preview-image');
+  }
   
 }

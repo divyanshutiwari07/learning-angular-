@@ -12,12 +12,18 @@ import { ChartsModule } from 'ng2-charts';
 
 import { TestService } from './service/test.service';
 
+import { HelloComponent } from './hello.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    HelloComponent
+
+
     
     // BarChartComponent,
     // MultipleChartsComponent,
@@ -28,6 +34,7 @@ import { TestService } from './service/test.service';
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey : "AIzaSyAvHOVyKdKTRI3y_Sxky2x0x2nD5r90-Bs" 
     }) 
