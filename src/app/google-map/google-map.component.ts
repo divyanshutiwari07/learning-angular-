@@ -22,5 +22,6 @@ export class GoogleMapComponent implements OnInit {
   moveToChartPage(){
     this.router.navigateByUrl('/chart');
   }
-
+  
+  
 }

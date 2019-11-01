@@ -10,14 +10,15 @@ import { ShowChartsComponent } from './chart/show-charts/show-charts.component';
 
 
 
+
 const routes: Routes = [
   { path: '', pathMatch:'full', redirectTo: '/google-map' },
   { path: 'google-map', component :  GoogleMapComponent },
   { path: 'chart' ,component: ChartComponent},
   { path: 'bar-chart' ,component:BarChartComponent },
   { path: 'multiple-charts' ,component:MultipleChartsComponent },
-  { path: 'show-charts' ,component:ShowChartsComponent }
-  
+  { path: 'show-charts' ,component:ShowChartsComponent },
+
 ];
 
 @NgModule({
@@ -26,4 +27,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [ChartComponent, GoogleMapComponent]
+export const routingComponents = [ChartComponent, GoogleMapComponent,BarChartComponent,
+  MultipleChartsComponent, ShowChartsComponent ]
+
+  

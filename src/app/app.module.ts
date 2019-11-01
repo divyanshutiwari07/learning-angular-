@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { ChartsModule } from 'ng2-charts';
-import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
-import { MultipleChartsComponent } from './chart/multiple-charts/multiple-charts.component';
+// import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
+// import { MultipleChartsComponent } from './chart/multiple-charts/multiple-charts.component';
+// import { ShowChartsComponent } from './chart/show-charts/show-charts.component';
+
 import { TestService } from './service/test.service';
-import { ShowChartsComponent } from './chart/show-charts/show-charts.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents,
-    BarChartComponent,
-    MultipleChartsComponent,
-    ShowChartsComponent,
+    routingComponents
+    
+    // BarChartComponent,
+    // MultipleChartsComponent,
+    // ShowChartsComponent,
     
   ],
   imports: [
