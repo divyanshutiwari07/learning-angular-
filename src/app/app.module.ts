@@ -12,8 +12,24 @@ import { ChartsModule } from 'ng2-charts';
 
 import { TestService } from './service/test.service';
 
-import { HelloComponent } from './hello.component';
 import { FormsModule } from '@angular/forms';
+
+import { MultipleChartsComponent } from './chart/multiple-charts/multiple-charts.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 
@@ -21,14 +37,9 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     routingComponents,
-    HelloComponent
-
-
-    
     // BarChartComponent,
-    // MultipleChartsComponent,
-    // ShowChartsComponent,
-    
+    MultipleChartsComponent,
+    MainNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,11 +47,25 @@ import { FormsModule } from '@angular/forms';
     ChartsModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey : "AIzaSyAvHOVyKdKTRI3y_Sxky2x0x2nD5r90-Bs" 
-    }) 
+      apiKey : 'AIzaSyAvHOVyKdKTRI3y_Sxky2x0x2nD5r90-Bs'
+    }),
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    ToastrModule.forRoot({
+      timeOut: 2000
+    }),
   ],
   providers: [
-    TestService
+    TestService,
+
   ],
   bootstrap: [AppComponent]
 })

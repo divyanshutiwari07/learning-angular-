@@ -1,8 +1,15 @@
-<agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onChoosenLocation($event)">
-    <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
-</agm-map>
+<app-main-nav>
+    <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="onChoosenLocation($event)">
+        <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+    </agm-map>
+      
+      <button (click)="moveToChartPage()">Move to chart</button>
+      <button (click)="moveToPreviewImage()">Move to preview image</button>
+</app-main-nav>
+
+
+
+
   
-  <button (click)="moveToChartPage()">Move to chart</button>
-  <button (click)="moveToPreviewImage()">Move to preview image</button>
 
   

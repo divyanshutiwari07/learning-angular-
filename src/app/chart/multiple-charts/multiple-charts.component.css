@@ -27,8 +27,9 @@ flex: 1;
 
 .chart-container {
 background: #2b2b2b;
-min-height: 200px;
+min-height: 42vh;
 padding: 10px;
+position: relative;
 }
 
 .center-name{

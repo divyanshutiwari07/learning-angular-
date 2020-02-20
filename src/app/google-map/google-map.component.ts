@@ -8,22 +8,22 @@ import { Router } from '@angular/router';
 })
 export class GoogleMapComponent implements OnInit {
 
-  ngOnInit() {
-  }
+  constructor(private router: Router) { }
   lat = 51.678418;
   lng = 7.809007;
 
-  constructor(private router: Router) { }
+  ngOnInit() {
+  }
 
-  onChoosenLocation(event){
+  onChoosenLocation(event) {
     this.lat =  event.coords.lat;
     this.lng = event.coords.lng;
   }
-  moveToChartPage(){
+  moveToChartPage() {
     this.router.navigateByUrl('/chart');
   }
-  moveToPreviewImage(){
+  moveToPreviewImage() {
     this.router.navigateByUrl('/preview-image');
   }
-  
+
 }
